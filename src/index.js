@@ -1,23 +1,44 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom/client";
 
-const Greeting = () => {
+const BookList = () => {
   return (
     <Fragment>
-      <Person />
-      <Message />
+      <Book />
     </Fragment>
   );
 };
 
-const Person = () => <h2>Code with Ashith</h2>;
-const Message = () => {
-  return <p>This is nested component</p>;
+const Book = () => {
+  return (
+    <article>
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
+};
+
+const Image = () => {
+  return (
+    <img
+      src="https://m.media-amazon.com/images/I/41r6F2LRf8L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg"
+      alt=""
+    />
+  );
+};
+
+const Title = () => {
+  return <h1>The Psychology of Money Paperback</h1>;
+};
+
+const Author = () => {
+  return <h1>Morgan Housel</h1>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Greeting />
+    <BookList />
   </React.StrictMode>
 );
