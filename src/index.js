@@ -39,12 +39,34 @@ const BookList = () => {
 };
 
 const Book = ({ title, author, img, price }) => {
+  // https://reactjs.org/docs/events.html
+  // onClick, onMouseOver
+
+  const clickHandler = () => {
+    alert("Hello world");
+  };
+
+  const complexHandler = (title) => {
+    console.log(title);
+  };
+
   return (
-    <article className="book">
+    <article
+      className="book"
+      onMouseOver={() => {
+        console.log("on Mouse Over");
+      }}
+    >
       <img src={img} alt="" />
-      <h1>{title}</h1>
+      <h1 onClick={() => console.log(title)}>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
-      <p>Price $ {price}</p>s{" "}
+      <p>Price $ {price}</p>
+      <button type="button" onClick={clickHandler}>
+        Reference Example
+      </button>
+      <button type="button" onClick={() => complexHandler(title)}>
+        Should be inside a function
+      </button>
     </article>
   );
 };
