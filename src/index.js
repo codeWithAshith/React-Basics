@@ -1,11 +1,26 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom/client";
 
+// JSX Rules
+// return single element
+// div / section / article or Fragment
+// use camelCase for html attribute
+// className instead of class
+// close every element
+
 const Greeting = () => {
   return (
     <Fragment>
-      <h3>CodewithAshith</h3>
-      <p>This is our first component</p>
+      <h3>Hello World</h3>
+      <ul>
+        <li>
+          <a href="" alt="">
+            Hello World
+          </a>
+        </li>
+        <img src="" alt="" />
+        <input type="text" name="" id="" />
+      </ul>
     </Fragment>
   );
 };
