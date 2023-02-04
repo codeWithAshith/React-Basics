@@ -1,23 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
+import UseStateBasics from "./01.useState/1.UseStateBasics";
+import UseStateArray from "./01.useState/2.UseStateArray";
+import UseStateObject from "./01.useState/3.UseStateObject";
+import UseStateCounter from "./01.useState/4.UseStateCounter";
 
 import "./index.css";
 
 const App = () => {
-  const [text, setText] = useState("Random Title");
-  const handleClick = () => {
-    if (text === "Random Title") {
-      setText("Hello World");
-    } else {
-      setText("Random Title");
-    }
-  };
-
   return (
     <div className="container">
-      <h2>{text}</h2>
-      <button className="btn" onClick={handleClick}>
-        Change Title
-      </button>
+      <UseStateBasics />
+      <UseStateArray />
+      <UseStateObject />
+      <UseStateCounter />
     </div>
   );
 };
