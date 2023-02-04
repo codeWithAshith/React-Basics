@@ -1,28 +1,18 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom/client";
 
-// JSX Rules
-// return single element
-// div / section / article or Fragment
-// use camelCase for html attribute
-// className instead of class
-// close every element
-
 const Greeting = () => {
   return (
     <Fragment>
-      <h3>Hello World</h3>
-      <ul>
-        <li>
-          <a href="" alt="">
-            Hello World
-          </a>
-        </li>
-        <img src="" alt="" />
-        <input type="text" name="" id="" />
-      </ul>
+      <Person />
+      <Message />
     </Fragment>
   );
+};
+
+const Person = () => <h2>Code with Ashith</h2>;
+const Message = () => {
+  return <p>This is nested component</p>;
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
