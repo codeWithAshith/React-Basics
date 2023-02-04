@@ -4,22 +4,44 @@ import ReactDOM from "react-dom/client";
 //css
 import "./index.css";
 
-const author = "Morgan Housel";
-const title = "The Psychology of Money Paperback";
-const img =
-  "https://m.media-amazon.com/images/I/41r6F2LRf8L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg";
-const price = 10;
+const books = [
+  {
+    title: "The Psychology of Money Paperback",
+    author: "Morgan Housel",
+    img: "https://m.media-amazon.com/images/I/41r6F2LRf8L._SY264_BO1,204,203,200_QL40_FMwebp_.jpg",
+    price: 10,
+  },
+  {
+    title: "Ikigai",
+    author: "Héctor García",
+    img: "https://m.media-amazon.com/images/P/178633089X.01._SCLZZZZZZZ_SX500_.jpg",
+    price: 10,
+  },
+  {
+    title: "8 Rules of Love",
+    author: "Jay Shetty",
+    img: "https://m.media-amazon.com/images/I/712V6e98ZsL.jpg",
+    price: 10,
+  },
+];
 
 const BookList = () => {
   return (
     <section className="booklist">
-      <Book title={title} author={author} img={img} price={price} />
+      {books.map((book, index) => (
+        <Book
+          title={book.title}
+          author={book.author}
+          img={book.img}
+          price={book.price}
+        />
+      ))}
     </section>
   );
 };
 
-const Book = (props) => {
-  const { title, author, img, price } = props;
+const Book = ({ title, author, img, price }) => {
+  // const { title, author, img, price } = props;
   return (
     <article className="book">
       <img src={img} alt="" />
