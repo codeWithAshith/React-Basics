@@ -2,6 +2,13 @@ import React, { useState } from "react";
 
 import "./index.css";
 
+// General Rules of Hooks
+// ----------------------
+// use
+// component name must be uppercase
+// must be in the function/component body
+// cannot call conditionally
+
 const App = () => {
   const [text, setText] = useState("Random Title");
   const handleClick = () => {
