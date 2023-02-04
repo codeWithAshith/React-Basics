@@ -1,17 +1,22 @@
 import React, { Fragment } from "react";
 import ReactDOM from "react-dom/client";
 
+//css
+import "./index.css";
+
 const BookList = () => {
   return (
-    <Fragment>
+    <section className="booklist">
       <Book />
-    </Fragment>
+      <Book />
+      <Book />
+    </section>
   );
 };
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image />
       <Title />
       <Author />
@@ -33,7 +38,12 @@ const Title = () => {
 };
 
 const Author = () => {
-  return <h1>Morgan Housel</h1>;
+  return (
+    // inline style in jsx 
+    <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}>
+      Morgan Housel
+    </h4>
+  );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
