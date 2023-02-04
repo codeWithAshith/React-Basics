@@ -34,13 +34,15 @@ const BookList = () => {
           author={book.author}
           img={book.img}
           price={book.price}
-        />
+        >
+          Description about the book
+        </Book>
       ))}
     </section>
   );
 };
 
-const Book = ({ title, author, img, price }) => {
+const Book = ({ title, author, img, price, children }) => {
   // const { title, author, img, price } = props;
   return (
     <article className="book">
@@ -52,6 +54,7 @@ const Book = ({ title, author, img, price }) => {
         {author.toUpperCase()}
       </h4>
       <p>Price $ {price}</p>
+      {children}
     </article>
   );
 };
