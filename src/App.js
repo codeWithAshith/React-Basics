@@ -1,18 +1,16 @@
 import React from "react";
-import UseStateBasics from "./01.useState/1.UseStateBasics";
-import UseStateArray from "./01.useState/2.UseStateArray";
-import UseStateObject from "./01.useState/3.UseStateObject";
-import UseStateCounter from "./01.useState/4.UseStateCounter";
+import UseEffectBasics from "./02.useEffect/1.UseEffectBasics";
+import UseEffectCleanUp from "./02.useEffect/2.UseEffectCleanUp";
+import UseEffectSecondArgument from "./02.useEffect/3.UseEffectSecondArgument";
 
 import "./index.css";
 
 const App = () => {
   return (
     <div className="container">
-      <UseStateBasics />
-      <UseStateArray />
-      <UseStateObject />
-      <UseStateCounter />
+      <UseEffectBasics />
+      <UseEffectCleanUp />
+      <UseEffectSecondArgument />
     </div>
   );
 };
