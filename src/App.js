@@ -1,12 +1,12 @@
 import React from "react";
-import PropDrilling from "./07.propDrilling/PropDrilling";
+import ContextAPI from "./08.contextApi/ContextApi";
 
 import "./index.css";
 
 const App = () => {
   return (
     <div className="container">
-      <PropDrilling />
+      <ContextAPI />
     </div>
   );
 };
