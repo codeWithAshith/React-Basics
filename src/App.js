@@ -1,12 +1,12 @@
 import React from "react";
-import UseRefBasics from "./05.useRef/1.UseRefBasics";
+import Index from "./06.useReducer/Index";
 
 import "./index.css";
 
 const App = () => {
   return (
     <div className="container">
-      <UseRefBasics />
+      <Index />
     </div>
   );
 };
