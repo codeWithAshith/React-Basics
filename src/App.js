@@ -1,16 +1,16 @@
 import React from "react";
-import UseEffectBasics from "./02.useEffect/1.UseEffectBasics";
-import UseEffectCleanUp from "./02.useEffect/2.UseEffectCleanUp";
-import UseEffectSecondArgument from "./02.useEffect/3.UseEffectSecondArgument";
+import MultipleReturnFetch from "./03.conditionalRendering/2.MultipleReturnFetch";
+import Shortcircuit from "./03.conditionalRendering/3.Shortcircuit";
+import ShowHide from "./03.conditionalRendering/4.ShowHide";
 
 import "./index.css";
 
 const App = () => {
   return (
     <div className="container">
-      <UseEffectBasics />
-      <UseEffectCleanUp />
-      <UseEffectSecondArgument />
+      <MultipleReturnFetch />
+      <Shortcircuit />
+      <ShowHide />
     </div>
   );
 };
