@@ -1,12 +1,12 @@
 import React from "react";
-import Index from "./06.useReducer/Index";
+import PropDrilling from "./07.propDrilling/PropDrilling";
 
 import "./index.css";
 
 const App = () => {
   return (
     <div className="container">
-      <Index />
+      <PropDrilling />
     </div>
   );
 };
