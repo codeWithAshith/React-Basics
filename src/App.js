@@ -1,16 +1,14 @@
 import React from "react";
-import MultipleReturnFetch from "./03.conditionalRendering/2.MultipleReturnFetch";
-import Shortcircuit from "./03.conditionalRendering/3.Shortcircuit";
-import ShowHide from "./03.conditionalRendering/4.ShowHide";
+import Controlledinputs from "./4.forms/1.Controlledinputs";
+import MultipleInputs from "./4.forms/2.MultipleInputs";
 
 import "./index.css";
 
 const App = () => {
   return (
     <div className="container">
-      <MultipleReturnFetch />
-      <Shortcircuit />
-      <ShowHide />
+      <Controlledinputs />
+      <MultipleInputs />
     </div>
   );
 };
