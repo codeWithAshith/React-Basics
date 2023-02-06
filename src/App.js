@@ -1,14 +1,12 @@
 import React from "react";
-import Controlledinputs from "./4.forms/1.Controlledinputs";
-import MultipleInputs from "./4.forms/2.MultipleInputs";
+import UseRefBasics from "./05.useRef/1.UseRefBasics";
 
 import "./index.css";
 
 const App = () => {
   return (
     <div className="container">
-      <Controlledinputs />
-      <MultipleInputs />
+      <UseRefBasics />
     </div>
   );
 };
