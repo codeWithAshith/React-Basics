@@ -1,12 +1,12 @@
 import React from "react";
-import Index from "./10.propTypes/Index";
+import UseMemoBasics from "./11.useMemo/UseMemoBasics";
 
 import "./index.css";
 
 const App = () => {
   return (
     <div className="container">
-      <Index />
+      <UseMemoBasics />
     </div>
   );
 };
