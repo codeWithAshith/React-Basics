@@ -6,8 +6,8 @@ import { useFetch } from "./UseFetch";
 const url = "https://course-api.com/javascript-store-products";
 
 const Example = () => {
-  const { loading, products } = useFetch(url);
-  console.log(products);
+  const { loading, data } = useFetch(url);
+  console.log(data);
   return (
     <div>
       <h2>{loading ? "loading..." : "data"}</h2>
