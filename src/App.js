@@ -1,13 +1,13 @@
 import React from "react";
-import UseMemoBasics from "./11.useMemo/UseMemoBasics";
 
 import "./index.css";
+import BirthdayApp from "./Projects/01. Birthday Reminder/final/BirthdayApp";
 
 const App = () => {
   return (
-    <div className="container">
-      <UseMemoBasics />
-    </div>
+    <>
+      <BirthdayApp />
+    </>
   );
 };
 
